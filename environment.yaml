@@ -1,0 +1,35 @@
+name: ml-analysis-env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+
+  # Core libraries
+  - numpy
+  - pandas
+
+  # Visualization
+  - matplotlib
+  - seaborn
+
+  # Machine Learning
+  - scikit-learn
+
+  # Handling imbalance
+  - imbalanced-learn
+
+  # Notebook support
+  - jupyter
+  - notebook
+
+  # Optional (useful)
+  - scipy
+  - joblib
+
+  # Pip (for extra installs if needed)
+  - pip
+  - pip:
+      - xgboost
